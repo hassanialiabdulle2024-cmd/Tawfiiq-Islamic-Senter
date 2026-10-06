@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tawfiiq Islamsk Senter</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="skyline" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMax slice">
+<g fill="#06161c">
+<path d="M0 220V170h90v-28h30v28h70v-40h24v40h110V150h18v20h60v-60a60 60 0 0 1 120 0v60h20v-90l9-30 9 30v90h34v-20h30V220z"/>
+<path d="M630 220v-70h40v-40a70 70 0 0 1 140 0v40h40v70z" opacity="0"/>
+<path d="M560 220V120c0-52 40-96 90-96s90 44 90 96v100z"/>
+<rect x="643" y="4" width="4" height="24"/>
+<path d="M780 220v-120l11-40 11 40v120zM830 220V150h60v-36a50 50 0 0 1 100 0v36h40v70zM1070 220v-100l9-28 9 28v100h60v-60h52v60z"/>
+<path d="M500 220v-130l10-36 10 36v130z"/>
+</g>
+<g fill="#d4a846"><circle cx="645" cy="8" r="5"/><circle cx="510" cy="48" r="3"/><circle cx="791" cy="54" r="3"/><circle cx="1079" cy="86" r="3"/><circle cx="249" cy="104" r="3"/></g>
+<g fill="#ffd77a" opacity=".9"><rect x="632" y="110" width="8" height="18" rx="4"/><rect x="651" y="110" width="8" height="18" rx="4"/><rect x="670" y="110" width="8" height="18" rx="4"/><rect x="613" y="150" width="8" height="18" rx="4"/><rect x="670" y="150" width="8" height="18" rx="4"/></g>
+</symbol>
+<symbol id="moon" viewBox="0 0 40 40"><path d="M26 4a16 16 0 1 0 8 29A13 13 0 0 1 26 4z" fill="#d4a846"/></symbol>
+</svg>
+
+<header>
+<div class="bar">
+<a class="logo" href="#hjem"><img src="images/logo.png" alt="Tawfiiq logo">Tawfiiq Islamsk Senter</a>
+<button id="burger" aria-label="Meny" aria-expanded="false">Meny</button>
+<nav id="nav" aria-label="Hovedmeny">
+<a href="#hjem" data-v="hjem">Hjem</a><a href="#om-oss" data-v="om-oss">Om oss</a><a href="#tjenester" data-v="tjenester">Tjenester</a><a href="#kontakt" data-v="kontakt">Kontakt oss</a>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- HJEM -->
+<div class="view" id="v-hjem">
+<div class="hero home">
+<svg class="sky" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<g fill="#fff"><circle class="star" cx="120" cy="80" r="2"/><circle class="star" cx="300" cy="150" r="1.6"/><circle class="star" cx="520" cy="60" r="2"/><circle class="star" cx="760" cy="120" r="1.8"/><circle class="star" cx="980" cy="70" r="2"/><circle class="star" cx="1120" cy="170" r="1.6"/><circle class="star" cx="880" cy="240" r="1.4"/><circle class="star" cx="200" cy="260" r="1.4"/></g>
+<use href="#moon" x="930" y="60" width="90" height="90"/>
+<use href="#skyline" x="0" y="480" width="1200" height="220"/>
+</svg>
+<div class="in">
+<div>
+<h1>Et levende senter for tro, kunnskap og fellesskap</h1>
+<p>Tawfiiq er mer enn en moske. Vi er et aktivt fellesskap for mennesker i alle aldre, med et trygt og inkluderende milj&oslash; for l&aelig;ring, tro og samhold.</p>
+<div class="btns"><a class="btn gold" href="#tjenester">Se tjenestene v&aring;re</a><a class="btn line" href="#kontakt">Finn oss</a></div>
+</div>
+<figure class="photo"><img src="images/mosque.jpg" alt="Tawfiiq moske, Tøyen, Oslo"><figcaption>Tawfiiq Islamsk Senter, &Aring;kebergveien 40, T&oslash;yen</figcaption></figure>
+</div>
+</div>
+<div class="stats">
+<div class="stat"><b>1989</b><span>Moskeen ble stiftet</span></div>
+<div class="stat"><b>9000+</b><span>Medlemmer</span></div>
+<div class="stat"><b>2</b><span>Moskeer: Tøyen og Rommen</span></div>
+<div class="stat"><b>5</b><span>Daglige fellesbønner</span></div>
+</div>
+
+<section id="bonn">
+<h2>B&oslash;nnetider i Oslo</h2>
+<div class="pray">
+<div class="next"><small>Neste b&oslash;nn</small><div class="nm" id="nn">&hellip;</div><div class="cd" id="cd">--:--:--</div><div class="clk" id="clk"></div></div>
+<div><table class="pt"><thead><tr><th>B&oslash;nn</th><th></th><th>Adhan</th><th>Iqamah</th><th>I morgen</th></tr></thead><tbody id="pt"></tbody></table>
+<p class="note" id="pnote">Kilde: MyMasjid. <a href="https://www.my-masjid.com" target="_blank" rel="noopener">Se alltid MyMasjid-appen for oppdaterte tider.</a></p></div>
+</div>
+</section>
+<section>
+<h2>Hva vi tilbyr</h2>
+<p class="lead">Fra Koranskole for barn til rådgivning for familier. Dette er noe av det du finner hos oss.</p>
+<div class="grid">
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h7a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H4zM20 5h-7a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h8z"/></svg></div><h3>Læring og åndelig utvikling</h3><p>Undervisning i islam og språk for barn, ungdom og voksne.</p></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 15c3 0 6 1.5 6 5"/></svg></div><h3>Ungdom i fokus</h3><p>Eget ungdomsnettverk og egne programmer under konferansene.</p></div>
+<div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></svg></div><h3>Veldedighet</h3><p>Vi samler inn penger til dem som trenger det, og til drift av senteret.</p></div>
+</div>
+</section>
+<div class="band"><section>
+<div><h2>Støtt moskeen</h2><p>Å bli medlem er mer enn et medlemskap. Det er et steg inn i et varmt fellesskap. Du kan også gi frivillig veldedighet (sadaqah jariyah). Din støtte utgjør en forskjell.</p></div>
+<div class="vipps"><span>Doner med Vipps</span><b>30114</b><button class="btn gold" id="copy" style="cursor:pointer;font:inherit;font-weight:700">Kopier nummer</button></div>
+</section></div>
+</div>
+
+<!-- OM OSS -->
+<div class="view" id="v-om-oss">
+<div class="hero small"><svg class="sky" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#skyline" x="0" y="190" width="1200" height="220"/></svg>
+<div class="in"><h1>Om oss</h1><p>Tawfiiq Islamsk Senter er en moské og et samlingssted. Vi styrker samholdet blant medlemmene og bidrar positivt til samfunnet.</p></div></div>
+<section>
+<h2>Historie og grunnleggelse</h2>
+<p class="lead">Senteret ble formelt etablert i Oslo i 1995 av norsksomaliere. Moskeen ble stiftet allerede i 1989.</p>
+<div class="tl">
+<div><b>1989</b><br>Tawfiiq moské stiftes og holder til i leide lokaler.</div>
+<div><b>1995</b><br>Tawfiiq Islamsk Senter etableres formelt i Oslo.</div>
+<div><b>2006</b><br>Tawfiiq Kulturhus stiftes.</div>
+<div><b>2007</b><br>Tomten i Åkebergveien 40 kjøpes i juni.</div>
+<div><b>2012</b><br>Det nye bygget står ferdig og tas i bruk.</div>
+<div><b>2023</b><br>Avdeling Nedre Rommen kjøpes.</div>
+</div>
+</section>
+<div class="band"><section>
+<div><figure class="photo" style="margin-bottom:20px"><img src="images/mosque.jpg" alt="Tawfiiq moske"></figure><h2>Beliggenhet og fasiliteter</h2><p>Senteret ligger sentralt i Oslo. Bygningen er moderne og har fem etasjer, med minaret og kuppel. Her er to store bønnerom. Bygget huser også Tawfiiq Kulturhus, så senteret er et bredere samfunnshus.</p></div>
+<div class="vipps"><b>9000+</b><span>medlemmer. Norges største enkeltstående moské.</span></div>
+</section></div>
+<section><h2>Medlemskap og organisering</h2><p class="lead">Moskeen drives i stor grad av frivillige medlemmer, med noen få ansatte. Vil du hjelpe til? Ta kontakt.</p><div class="btns"><a class="btn gold" href="#kontakt" style="color:#1b1704">Kontakt oss</a></div></section>
+</div>
+
+<!-- TJENESTER -->
+<div class="view" id="v-tjenester">
+<div class="hero small"><svg class="sky" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#skyline" x="0" y="190" width="1200" height="220"/></svg>
+<div class="in"><h1>Tjenester</h1><p>Undervisning, bønn, familierådgivning og aktiviteter for hele menigheten.</p></div></div>
+<section>
+<div class="grid">
+<div class="card"><h3>Undervisning for alle</h3><p>Koran- og helgeskole fra 6 år. Undervisning for ungdom og studenter. Egen opplæring for voksne og foreldre.</p></div>
+<div class="card"><h3>Daglige bønner</h3><p>Vi holder daglige fellesbønner. Bønnetidene finner du i MyMasjid-appen. Moskeen åpner ca. en halvtime før hver bønn.</p></div>
+<div class="card"><h3>Tjenester for familier</h3><p>Rådgivning og veiledning, blant annet i forbindelse med ekteskap. Familien har en viktig rolle i islam.</p></div>
+<div class="card"><h3>Ungdom i fokus</h3><p>Eget ungdomsnettverk og egne programmer for ungdom. En trygg arena for utvikling, læring og fellesskap.</p></div>
+<div class="card"><h3>Samfunnsdialog</h3><p>Vi inviterer politi og barnevern til konferansene våre. Målet er å bygge tillit og et trygt samfunn.</p></div>
+<div class="card"><h3>Veldedighet og støtte</h3><p>Vi samler jevnlig inn penger til trengende, drift av senteret og viktige samfunnsformål.</p></div>
+</div>
+</section>
+<div class="band"><section>
+<div><h2>Ramadan hos Tawfiiq</h2><p>Forklaring av Koranen (tafseer), felles måltider og innsamlingsaksjoner. Arrangementer som styrker samholdet i menigheten.</p></div>
+<div><h2>Kultur og høytider</h2><p>Vi feirer islamske høytider sammen. Eid markeres med store, åpne og inkluderende arrangementer for hele menigheten.</p></div>
+</section></div>
+</div>
+
+<!-- KONTAKT -->
+<div class="view" id="v-kontakt">
+<div class="hero small"><svg class="sky" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#skyline" x="0" y="190" width="1200" height="220"/></svg>
+<div class="in"><h1>Kontakt oss</h1><p>Velkommen innom. Moskeen er åpen ca. en halvtime før hver bønn.</p></div></div>
+<section>
+<div class="two">
+<div class="card loc"><h3>Tøyen Moské</h3><p>Åkebergveien 40, 0650 Oslo</p><p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Åkebergveien+40+Oslo">Vis på kart</a></p></div>
+<div class="card loc"><h3>Rommen Moské</h3><p>Nedre Rommen 5K, 0988 Oslo</p><p><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nedre+Rommen+5K+Oslo">Vis på kart</a></p></div>
+<div class="card"><h3>E-post</h3><p><a href="mailto:post@tawfiiq.no">post@tawfiiq.no</a></p></div>
+<div class="card"><h3>Telefon</h3><p><a href="tel:+4740173031">+47 401 73 031</a></p></div>
+</div>
+<div class="acc">
+<h2 style="margin-top:40px">Vanlige spørsmål</h2>
+<button aria-expanded="false">Når er moskeen åpen? <span>+</span></button><div class="pn">Moskeen holder åpent ca. en halvtime før hver bønn.</div>
+<button aria-expanded="false">Hvor finner jeg bønnetidene? <span>+</span></button><div class="pn">Bønnetidene finner du i MyMasjid-appen.</div>
+<button aria-expanded="false">Hvordan blir jeg medlem eller gir støtte? <span>+</span></button><div class="pn">Ta kontakt på e-post eller telefon. Du kan også donere med Vipps til nummer 30114.</div>
+</div>
+</section>
+</div>
+</main>
+
+<footer>
+<p>Tawfiiq Islamsk Senter &middot; Åkebergveien 40, Oslo &middot; <a href="mailto:post@tawfiiq.no">post@tawfiiq.no</a></p>
+<p>&copy; Alle rettigheter reservert</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
